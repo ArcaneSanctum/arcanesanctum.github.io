@@ -10,9 +10,6 @@ on:
 jobs:
   test-deploy:
     name: Test deployment
-    defaults:
-      run:
-        working-directory: ./docs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
