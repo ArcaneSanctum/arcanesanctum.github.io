@@ -58,8 +58,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'These docs and related projects are under active development, <a rel="noopener noreferrer" href="/developer/how-to-contribute">come join us</a>!',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
       navbar: {
-        title: 'GeleBot',
+        title: 'ArcaneSanctum.ch',
         logo: {
           alt: 'GeleChibi',
           src: 'img/gelechibi_v1.1.png',
@@ -68,11 +76,26 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'arcanesanctum/intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Arcane Sanctum',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'GeleBot',
+            label: 'GeleBot',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'Docusaurus',
+            label: 'Docusaurus',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -81,13 +104,12 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',  
+                label: 'Arcane Sanctum',  
                 to: '/',
               },
             ],
@@ -96,16 +118,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: './'
               },
             ],
           },
@@ -113,17 +127,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ArcaneSanctum',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

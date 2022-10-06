@@ -6,13 +6,30 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #3578e5;
+  --ifm-color-primary-dark: #306cce;
+  --ifm-color-primary-darker: #2d66c3;
+  --ifm-color-primary-darkest: #2554a0;
+  --ifm-color-primary-light: #538ce9;
+  --ifm-color-primary-lighter: #72a1ed;
+  --ifm-color-primary-lightest: #9abcf2;
+
+  --ifm-color-secondary: #3578e5;
+  --ifm-color-secondary-dark: #729adc;
+  --ifm-color-secondary-darker: #2d66c3;
+  --ifm-color-secondary-darkest: #2554a0;
+  --ifm-color-secondary-light: #538ce9;
+  --ifm-color-secondary-lighter: #72a1ed;
+  --ifm-color-secondary-lightest: #dce5f3;
+
+  --ifm-color-warning: #ffba00;
+  --ifm-color-warning-dark: #e6a700;
+  --ifm-color-warning-darker: #d99e00;
+  --ifm-color-warning-darkest: #b38200;
+  --ifm-color-warning-light: #ffc426;
+  --ifm-color-warning-lighter: #ffcf4d;
+  --ifm-color-warning-lightest: #ffdd80;
+
   --ifm-code-font-size: 95%;
 
   --ifm-navbar-height: 80px;
@@ -30,7 +47,67 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
 
-  --ifm-navbar-height: 64px;
+  --ifm-color-secondary: #3578e5;
+  --ifm-color-secondary-dark: #142c54;
+  --ifm-color-secondary-darker: #112549;
+  --ifm-color-secondary-darkest: #0e203c;
+  --ifm-color-secondary-light: #538ce9;
+  --ifm-color-secondary-lighter: #72a1ed;
+  --ifm-color-secondary-lightest: #9abcf2;
+
+  --ifm-color-primary: #ffba00;
+  --ifm-color-primary-dark: #e6a700;
+  --ifm-color-primary-darker: #d99e00;
+  --ifm-color-primary-darkest: #b38200;
+  --ifm-color-primary-light: #ffc426;
+  --ifm-color-primary-lighter: #ffcf4d;
+  --ifm-color-primary-lightest: #ffdd80;
+
+  --ifm-navbar-height: 80px;
 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* --- NAVBAR --- */
+:root .navbar {
+  background-color: var(--ifm-color-secondary-lightest);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+
+/* --- MAIN --- */
+:root main {
+  background-color: var(--ifm-color-secondary-lightest);
+}
+
+[data-theme='dark'] main {
+  background-color: var(--ifm-color-secondary-dark);
+}
+
+
+/* --- SIDEBAR --- */
+:root .theme-doc-sidebar-container {
+  background-color: var(--ifm-color-secondary-lightest);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: var(--ifm-color-secondary-darker);
+}
+
+
+/* --- FOOTER --- */
+:root footer {
+  --ifm-footer-background-color: var(--ifm-color-secondary-darkest);
+}
+
+[data-theme='dark'] footer {
+  --ifm-footer-background-color: var(--ifm-color-secondary-darkest);
+}
+
+:root .footer__link-item {
+}
+
+
