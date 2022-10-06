@@ -1,3 +1,5 @@
+[![GitHub Pages Deployment](https://github.com/ArcaneSanctum/arcanesanctum.github.io/actions/workflows/deploy-to-github-pages.yml/badge.svg)](https://github.com/ArcaneSanctum/arcanesanctum.github.io/actions/workflows/deploy-to-github-pages.yml)
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
