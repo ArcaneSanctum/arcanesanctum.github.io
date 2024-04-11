@@ -1,0 +1,17 @@
+import IncompleteDocWarning from '@site/src/components/IncompleteDocWarning';
+
+# Character Event Bridge
+
+
+:::caution
+<IncompleteDocWarning/>
+:::
+
+A **CharacterEventBridge** links a [Character](./character) to an [Event](./event).
+
+When an [Event](./event) is recorded, for every [Character](./character) that is part of the [Event](./event),
+a **CharacterEventBridge** is created.
+
+This is done to avoid a **Massive Unbounded Array** anti-pattern in the database where a single [Character](./character) could conceivably have thousands of 
+[Events](./event) or more. MongoDB enforces a 16MB document limit, and while it is unlikely that many
+[Characters](./character) would ever reach this limit, we take this precaution to be safe. 

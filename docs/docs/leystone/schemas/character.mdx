@@ -1,0 +1,12 @@
+import IncompleteDocWarning from '@site/src/components/IncompleteDocWarning';
+
+# Character
+
+
+:::caution
+<IncompleteDocWarning/>
+:::
+
+A **Character** represents a single in game character that is a member of a [Clan](./clan).
+Characters are owned by a [User](./user). When an [Event](./event) is recorded, for every **Character** that is part of the [Event](./event),
+a [CharacterEventBridge](./characterEventBridge) is created to link the character to the event. 

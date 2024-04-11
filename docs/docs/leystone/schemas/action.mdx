@@ -1,0 +1,16 @@
+import IncompleteDocWarning from '@site/src/components/IncompleteDocWarning';
+
+# Action 
+
+
+:::caution
+<IncompleteDocWarning/>
+:::
+
+Clans may create any number of **Actions**, each of which represent anything that they deem to be worth recording. Actions can give points toward any number of point categories. 
+
+When an **Action** is recorded, an [Event](./event) is recorded in the database based on the configuration of the **Action** at the time of recording.
+
+The configuration of an **Action** can be changed at any time, however this **will not** retroactively edit old **Events**. This allows clans to have the flexibility to have different 
+configurations for an **Action** at different times (ex. Double points over the weekend). Additionally, clans implementing DKP or other similar point-buy systems can modify points 
+given by **Actions** without causing unforseen consequences on old [Events](./event).
