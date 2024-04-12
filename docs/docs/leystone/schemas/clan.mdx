@@ -1,0 +1,17 @@
+import IncompleteDocWarning from '@site/src/components/IncompleteDocWarning';
+
+# Clans
+
+
+:::caution
+<IncompleteDocWarning/>
+:::
+
+A **Clan** is the most important overarching schema in Leystone. [Actions](./action) and [Characters](./character) are created for their **Clan** by their [Users](./user).
+They largely are intented to mirror in-game clans, so they primarily serve as a means for separating [Characters](./user) and their data into groups by having that data reference
+the **Clan** `ObjectId`.
+
+**Clans** are required to be connected to a Discord guild. The **Clan** can also be configured to connect to a LINE board using the LINE board id.
+
+A [Character](./character) is required to be a part of only a single **Clan**, but a single [User](./user) is not restricted on the number of different **Clans** that they can join
+if they have multiple [Characters](./character). As such, a [User](./user) may have different roles in different **Clans**.
